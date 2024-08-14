@@ -1,0 +1,144 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    transition: max-width 0.3s ease-in-out;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    /* background: linear-gradient(45deg, red 20%, orange 20%, orange 40%, yellow 40%, yellow 60%, green 60%, green 80%, blue 80%); */
+    color: rgb(5, 5, 5);
+    padding: 20px 0;
+    background: rgb(220, 115, 249);
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 10px 0 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.platform {
+    flex: 1 1 calc(30% - 40px);
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.platform a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.platform img {
+    max-width: 100px;
+    height: auto;
+}
+
+.platform h2 {
+    margin: 15px 0 10px;
+}
+
+.platform p {
+    margin: 0;
+}
+
+.platform:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color:  rgb(220, 115, 249);
+    color: #ccc;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.controls {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #3b4049;
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .platform {
+        flex: 1 1 100%;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .platform {
+        flex: 1 1 calc(45% - 40px);
+    }
+}
+
+/* Medium Devices, Laptops */
+@media only screen and (max-width: 992px) {
+    .container {
+        width: 85%;
+    }
+
+    .platform {
+        flex: 1 1 calc(30% - 40px);
+    }
+}
+
+/* Large Devices, Desktops */
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+}
